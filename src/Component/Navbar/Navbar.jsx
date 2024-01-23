@@ -20,9 +20,9 @@ const Navbar = () => {
                 </div>
                 <div className='nav-links'>
                     <div className='navbar1'>
-                        <a href='#'> <AiFillHome /> Home</a>
-                        <a href='#'> <IoIosChatbubbles /> Chat</a>
-                        <a href='#'> <IoMdSearch /> Search</a>
+                        <a href='/home'> <AiFillHome className='navbar3' /> Home</a>
+                        <a href=''> <IoIosChatbubbles className='navbar3'/> Chat</a>
+                        <a href='/search'> <IoMdSearch className='navbar3'/> Search</a>
                         <a href='#'> <FaBell /></a>
                     </div>
                     <div className='profile-icon'>

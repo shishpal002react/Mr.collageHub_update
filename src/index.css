@@ -5,7 +5,18 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
+
+/* Hide scrollbar for Webkit-based browsers */
+body::-webkit-scrollbar {
+  width: 5px;
+  display: none;
+}
+
+body::-webkit-scrollbar-thumb {
+}
+
 
 code {
   font-family: 'Roboto', sans-serif,
