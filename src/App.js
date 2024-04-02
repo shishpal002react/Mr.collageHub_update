@@ -4,6 +4,7 @@ import Login from './Component/Login/Login';
 import Home from "./Component/Home/Home";
 import { Search } from "./Component/Search/Search";
 import NewAssignment from "./Component/NewAssement/NewAssignment";
+import ShortListedCollage from "./pages/ShortListedCollage";
 
 function App() {
   return (
@@ -14,6 +15,10 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/search" element={<Search />} />
         <Route path="/newassignmentlead" element={<NewAssignment />} />
+
+
+        {/* screen 3 pages */}
+        <Route path="/shortlisted_pages" element={<ShortListedCollage/>} />
         </Routes>
       </BrowserRouter>
     </>

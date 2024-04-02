@@ -36,3 +36,112 @@
     transform: rotate(360deg);
   }
 }
+
+/* pages css */
+/* shortlisted collage */
+
+.shortList_collage{
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.short_size_header_font{
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28.13px;
+}
+
+.shortList_header_list{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.shortList_header_list_parent{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.shortList_header_list_left{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.shortList_header_list_left div {
+  padding: 5px 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.shortList_header_list_left input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.shortList_Box{
+  width: 100%;
+  margin-top: 20px;
+  padding: 0 5px;
+
+}
+
+.shortList_Box_first_child{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 30px;
+}
+
+.shortList_Box_first_child_left{
+  display: flex;
+  align-items: center;
+}
+
+.shortList_Box_first_child_left div{
+  padding: 0px 10px;
+  padding-top: 13px;
+}
+
+.shortList_Box_first_child_left div:nth-child(1) {
+  background-color: #C4E8F9; 
+}
+.shortList_Box_first_child_left div:nth-child(2) {
+  background-color: #EEACA6; 
+}
+.shortList_Box_first_child_left div:nth-child(3) {
+  background-color: #C4E8F9; 
+}
+
+.shortList_Box_second_child{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 30px;
+  margin-top: 22px;
+}
+
+.shortList_Box_second_child_child{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.shortList_Box_second_child_child div{
+  padding: 5px 20px;
+  background-color: #3FB1B5;
+}
+
+.single_flex_short{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.button_short{
+  display: flex;
+  padding: 5px 20px;
+  background-color:  #3FB1B5;
+}
