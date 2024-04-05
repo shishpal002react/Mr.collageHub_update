@@ -1,3 +1,12 @@
+*,html,body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  }
+
 .App {
   text-align: center;
 }
@@ -83,16 +92,23 @@
 
 .shortList_Box{
   width: 100%;
-  margin-top: 20px;
+  margin-top: 2rem;
   padding: 0 5px;
-
+  background-color: #E0E0E0;
+  padding: 2rem 0 0 2rem;
 }
+
 
 .shortList_Box_first_child{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 30px;
+}
+
+.shortList_Box_first_child p {
+  font-weight: 700;
+  color: #3FB1B5;
+  ;
 }
 
 .shortList_Box_first_child_left{
@@ -101,9 +117,20 @@
 }
 
 .shortList_Box_first_child_left div{
-  padding: 0px 10px;
-  padding-top: 13px;
+  width: auto;
+  height: auto;
+  padding: 12px 9px 12px 9px;
 }
+
+.shortList_Box_first_child_left div p{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16.41px;
+  color: #000000;
+  margin: 0;
+}
+
 
 .shortList_Box_first_child_left div:nth-child(1) {
   background-color: #C4E8F9; 
@@ -119,29 +146,206 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 30px;
-  margin-top: 22px;
+  
 }
 
 .shortList_Box_second_child_child{
   display: flex;
   align-items: center;
-  gap: 20px;
+  column-gap: 1rem;
 }
 
 .shortList_Box_second_child_child div{
-  padding: 5px 20px;
   background-color: #3FB1B5;
+  height: auto;
+  width: auto;
+  padding: 12px 14px 12px 14px;
+  border-radius: 4px;
+}
+
+.shortList_Box_second_child_child div p{
+  font-size: 14px;
+  line-height: 16.41px;
+  color: #000000;
+  margin: 0;
+  color: white;
 }
 
 .single_flex_short{
   display: flex;
-  gap: 20px;
   align-items: center;
+  column-gap: 2rem;
+}
+
+.single_flex_short p{
+  margin: 0;
 }
 
 .button_short{
   display: flex;
   padding: 5px 20px;
   background-color:  #3FB1B5;
+  border-radius: 4px;
 }
+
+.button_short p{
+  margin: 0;
+  color: white;
+}
+
+.button_short_2{
+  display: inline-flex;
+  padding: 4px 14px 4px 14px;
+  width: auto;
+  height: auto;
+  background-color: #EEACA6;;
+  margin-top: 1rem;
+  border-radius: 4px;
+}
+
+.button_short_2 p{
+  white-space: wrap;
+  color: white;
+  margin: 0;
+}
+
+/* table data */
+.short_table{
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.short_table table {
+  width: 100%;
+  border-collapse: collapse; /* Optional: Collapses the border into a single border */
+}
+
+.short_table th,
+.short_table td {
+  border: 1px solid black; /* Optional: Add border to cells */
+  padding: 8px; /* Optional: Add padding to cells */
+}
+
+.short_table th {
+  background-color: #f2f2f2; /* Optional: Add background color to header */
+}
+
+.short_table tbody tr {
+  background-color: #ffffff; /* Optional: Set background color for table rows */
+}
+
+.short_table tbody tr:nth-child(even) {
+  background-color: #f2f2f2; /* Optional: Set alternate background color for even rows */
+}
+
+.center-align {
+  text-align: center;
+}
+
+.changeColor{
+  background-color: #3FB1B5;
+}
+
+/* uspshortlist page */
+
+.shortList_ups{
+  margin-top: 3rem;
+  margin-left: 5%;
+  width: 85%;
+  display: flex;
+  gap: 3rem;
+}
+
+.ups_left_child {
+  width: 25%;
+}
+
+.ups_left_child > p{
+  color: #3FB1B5;
+  font-size: 20px;
+  margin: 0;
+}
+
+.ups_box_div{
+  margin: 0;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+}
+
+.ups_box_child{
+  display: flex;
+  justify-content: space-between;
+}
+
+.button_ups{
+  outline:"none";
+  padding: 8px 22px 8px 22px;
+  background-color: #FE5244;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.search_box{
+  margin-top: 3px;
+  height: 35px;
+}
+
+.search_box input{
+width: 100%;
+height: 100%;
+}
+
+.circle_class{
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #D9D9D9;
+  text-align: center;
+}
+
+.constant_margin{
+  margin-top: 0.5rem;
+}
+
+.ups_right_child {
+  width: 75%;
+}
+
+.ups_right_button{
+  display: flex;
+  justify-content: end;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.button_ups_right_red{
+  border: none;
+  outline: none;
+  background-color: #FE5244;
+  padding: 8px 30px;
+  border-radius: 5px;
+}
+
+.button_ups_right_blue{
+  border: none;
+  outline: none;
+  background-color: #3FB1B5;
+  padding: 8px 30px;
+  border-radius: 5px;
+}
+
+.ups_main_right_child{
+  margin-top: 2rem;
+  background-color: #E0E0E0;
+  padding: 2rem;
+}
+
+.ups_main_right_child div{
+  background-color: white;
+  padding: 10px;
+}
+
+

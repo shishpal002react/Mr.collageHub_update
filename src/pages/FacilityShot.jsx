@@ -10,8 +10,9 @@ import Navbar2 from '../Component/Navbar/Navbar2';
 import { useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
-const ShortListedCollage = () => {
+const FacilityShot = () => {
     const navigate = useNavigate();
+ 
     const location = useLocation();
     const { pathname } = location;
   
@@ -32,7 +33,7 @@ const ShortListedCollage = () => {
                 <p>Show Only</p>
 
                 <div className='shortList_header_list_left'>
-                        <div className={lastPart === "shortlisted_ups" ? "changeColor" : ""}>
+                <div className={lastPart === "shortlisted_ups" ? "changeColor" : ""}>
                             <input type="checkbox" onChange={() => navigate("/shortlisted_ups")}/>
                             <label>USP’s</label>
                         </div>
@@ -107,8 +108,17 @@ const ShortListedCollage = () => {
                             </tr>
                         </thead>
                         <tbody>
+                            <tr>
+                                <td>Diploma in EX      CAF Amount : INR500</td>
+                                <td>INR 30k/yr</td>
+                                <td>3 Years</td>
+                                <th><button className='button_header_style' >
+                                Remove
+                </button></th>
+                            </tr>
                         <tr>
                 <td colspan="4" class="center-align">
+
                     <div>
                         +Add More Course To Shortlist
                     </div>
@@ -387,4 +397,4 @@ const ShortListedCollage = () => {
     )
 }
 
-export default ShortListedCollage;
+export default FacilityShot;

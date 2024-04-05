@@ -5,6 +5,8 @@ import Home from "./Component/Home/Home";
 import { Search } from "./Component/Search/Search";
 import NewAssignment from "./Component/NewAssement/NewAssignment";
 import ShortListedCollage from "./pages/ShortListedCollage";
+import UspshortListPage from "./pages/UspshortListPage";
+import FacilityShot from "./pages/FacilityShot";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
 
         {/* screen 3 pages */}
         <Route path="/shortlisted_pages" element={<ShortListedCollage/>} />
+        <Route path="/shortlisted_ups" element={<UspshortListPage/>} />
+        <Route path="/shortlisted_facilty" element={<FacilityShot/>} />
         </Routes>
       </BrowserRouter>
     </>
