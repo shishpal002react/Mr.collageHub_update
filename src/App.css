@@ -74,6 +74,10 @@
   align-items: center;
 }
 
+.shortList_header_list_parent p{
+  margin: auto;
+}
+
 .shortList_header_list_left{
   display: flex;
   gap: 20px;
@@ -391,7 +395,206 @@ height: 100%;
 
 .collegeNotInterested > p {
   margin: 0;
-  font-size: 16px;
+  font-size: 20px;
   padding: 10px;
   font-weight: bold;
+}
+
+.college_not_internal_div{
+  display: flex;
+  margin: 10px;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+
+.college_not_internal_div div{
+  width: calc(100% / 3);
+  height: 40vh;
+}
+
+.college_not_internal_div div div {
+  height: 60px;
+  width: 100%;
+  padding: 5px 5px 0px 0px;
+  background-color: #D9D9D9;
+}
+
+.college_not_internal_div div div p {
+  margin: 0;
+  padding: 10px;
+}
+
+.college_not_internal_div div  p {
+  margin: 0;
+  padding: 10px;
+}
+
+
+.border_left{
+  border-left: 1px solid black;
+  height: 100%;
+}
+
+/* collage_recommantaion */
+
+.collage_recommantaion{
+  margin-top: 2rem !important;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.recommantation_margin{
+  margin-top: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.recommantation_margin_child{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.recommantation_margin_child p{ 
+   margin: 0;
+}
+
+.recommantation_left_child{
+  width: 20%;
+}
+
+.recommantation_header_list_left{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.recommantation_header_list_left div {
+  padding: 5px 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.recommantation_header_list_left input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.recommatntaion_right_button{
+  display: flex;
+  gap: 0.5rem;
+}
+
+.recommantation_short{
+  display: flex;
+  padding: 5px 20px;
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+
+.recommantation_short p{
+  margin: 0;
+  color: black;
+}
+
+.recommantation_right_div{
+  margin-top: 1rem;
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+
+.recommantation_right_div > p:nth-child(1) {
+  margin: 0;
+  font-size: 20px;
+  color: #3FB1B5;
+}
+
+.recommantation_right_button{
+  display: flex;
+  justify-content: end;
+  gap: 2rem;
+}
+
+.recommantation_Ups_data{
+  margin-top: 1rem;
+  background-color: #FFEFDB;
+  padding: 10px;
+}
+
+
+/* table data */
+.recommantation_table{
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.recommantation_table table {
+  width: 100%;
+  border-collapse: collapse; 
+}
+
+.recommantation_table table thead {
+background-color: #CDCDCD;
+}
+
+.recommantation_table th,
+.recommantation_table td {
+  padding: 8px;
+  text-align: center;
+}
+
+.button_recommantation_table{
+  border: none;
+  outline: none;
+  color: #3FB1B5;
+  border: 1px solid #3FB1B5;
+  padding: 8px 30px;
+  border-radius: 5px;
+}
+
+/* loan div */
+
+.loan_div{
+  margin-top: 2rem !important;
+  width: 70%;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 1rem 1.5rem;
+}
+
+.loan_div div p{
+  margin: 0;
+  text-align: start;
+}
+
+.loan_div_child{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.internal_div {
+  width: 300px;
+  border: 1px solid black;
+}
+
+.Loan_button{
+  display: flex;
+  padding: 12px 54px 12px 54px;
+  background-color:  #1D3969;
+  border-radius: 4px;
+}
+
+.Loan_button {
+  margin: 0;
+  color: white;
 }

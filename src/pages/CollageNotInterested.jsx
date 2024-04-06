@@ -28,10 +28,35 @@ const CollageNotInterested = () => {
             <div className='collegeNotInterested'>
                 <p>Do not Proceed 1 Colleges</p>
 
-                <div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <div className='college_not_internal_div'>
+                    <div>
+                        <div>
+                           <p>Collage</p>
+                        </div>
+                       
+                        <p>IILM University Gurugram (IILM University Gurugram - Gurgaon,
+Haryana)</p>
+                    </div>
+
+
+                    <div className='border_left'>
+                        <div>
+                        <p>Courses Selected</p>
+                        </div>
+                        <p>Bachelor of Arts (Honors) in Psychology, 
+Bachelor of Arts Applied Psychology  (Honours),
+BA in Liberal Arts (Honors),</p>
+                    
+                    </div>
+
+
+                    <div className='border_left'>
+                        <div>
+                         <p>Status</p>
+                        </div>
+                        
+                       <p>First Level Counselling Completed</p>
+                    </div>
                 </div>
 
             </div>

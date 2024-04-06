@@ -10,6 +10,12 @@ import FacilityShot from "./pages/FacilityShot";
 import PlacementShot from "./pages/PlacementShot";
 import CourseAndFess from "./pages/CourseAndFess";
 import CollageNotInterested from "./pages/CollageNotInterested";
+import CollageRecommantaion from "./pages/CollageRecommantaion";
+import UpsRecommantation from "./pages/UpsRecommantation";
+import FacilitiyRecommantaion from "./pages/FacilitiyRecommantaion";
+import PlacementRecommantation from "./pages/PlacementRecommantation";
+import CollageFessRecommantation from "./pages/CollageFessRecommantation";
+import Loan from "./pages/Loan";
 
 function App() {
   return (
@@ -30,6 +36,13 @@ function App() {
         <Route path="/shortlisted_course_fess" element={<CourseAndFess/>} />
 
         <Route path="/shortlisted_CollageNotInterested" element={<CollageNotInterested/>} />
+        <Route path="/shortlisted_CollageRecommantaion" element={<CollageRecommantaion/>} />
+        <Route path="/shortlisted_UpsRecommantation" element={<UpsRecommantation/>} />
+        <Route path="/shortlisted_FacilitiyRecommantaion" element={<FacilitiyRecommantaion/>} />
+        <Route path="/shortlisted_PlacementRecommantation" element={<PlacementRecommantation/>} />
+        <Route path="/shortlisted_CollageFessRecommantation" element={<CollageFessRecommantation/>} />
+
+        <Route path="/loan" element={<Loan/>} />
         </Routes>
       </BrowserRouter>
     </>

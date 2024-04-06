@@ -14,10 +14,16 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { FaLock } from "react-icons/fa6";
 import { MdLogout } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const Navbar2 = () => {
-
   const navigate = useNavigate();
+ 
+  const location = useLocation();
+  const { pathname } = location;
+
+  const parts = pathname.split("/");
+  const lastPart = parts[parts.length - 1];
 
   return (
     <>
@@ -76,22 +82,22 @@ const Navbar2 = () => {
 
             <ul class="header-list">
                 <li>
-                <p>Conversation&Activity</p>
+                <p className={lastPart === "shortlisted_ups" ? "nav_bar_color" : ""}>Conversation&Activity</p>
                 </li>
                 <li>
-                <p>Loan</p>
+                <p className={lastPart === "loan" ? "nav_bar_color" : ""} onClick={()=>navigate("/loan")}>Loan</p>
                 </li>
                 <li>
-                <p>Profile</p>
+                <p className={lastPart === "shortlisted_ups" ? "nav_bar_color" : ""}>Profile</p>
                 </li>
                 <li>
-               <p>College_Recommended</p>
+               <p className={lastPart === "shortlisted_ups" ? "nav_bar_color" : ""}>College_Recommended</p>
                 </li>
                 <li>
-                <p>Shortlisted_colleges (12)</p>
+                <p className={lastPart === "shortlisted_ups" ? "nav_bar_color" : ""}>Shortlisted_colleges (12)</p>
                 </li>
                 <li>
-               <p>Colleges_Not_Interested (0)</p>
+               <p className={lastPart === "shortlisted_CollageNotInterested" ? "nav_bar_color" : ""} onClick={()=>navigate("/shortlisted_CollageNotInterested")}>Colleges_Not_Interested (0)</p>
                 </li>
               </ul>
 
