@@ -39,14 +39,14 @@ const UspshortListPage = () => {
                 <input type="checkbox" onChange={() => navigate("/shortlisted_facilty")}/>
                 <label>Facilities</label>
               </div>
-              <div>
-                <input type="checkbox" />
-                <label>Placements</label>
-              </div>
-              <div>
-                <input type="checkbox" />
-                <label>Course & Fees</label>
-              </div>
+              <div className={lastPart === "shortlisted_placement" ? "changeColor" : ""}>
+                        <input type="checkbox" onChange={() => navigate("/shortlisted_placement")}/>
+                            <label>Placements</label>
+                        </div>
+                        <div className={lastPart === "shortlisted_course_fess" ? "changeColor" : ""}>
+                        <input type="checkbox" onChange={() => navigate("/shortlisted_course_fess")}/>
+                            <label>Course & Fees</label>
+                        </div>
             </div>
           </div>
           <button

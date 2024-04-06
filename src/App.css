@@ -93,9 +93,8 @@
 .shortList_Box{
   width: 100%;
   margin-top: 2rem;
-  padding: 0 5px;
+  padding: 0 10px 1rem 2rem;
   background-color: #E0E0E0;
-  padding: 2rem 0 0 2rem;
 }
 
 
@@ -108,7 +107,7 @@
 .shortList_Box_first_child p {
   font-weight: 700;
   color: #3FB1B5;
-  ;
+  margin: 0;
 }
 
 .shortList_Box_first_child_left{
@@ -217,13 +216,25 @@
 
 .short_table table {
   width: 100%;
-  border-collapse: collapse; /* Optional: Collapses the border into a single border */
+  border-collapse: collapse; 
 }
 
 .short_table th,
 .short_table td {
-  border: 1px solid black; /* Optional: Add border to cells */
-  padding: 8px; /* Optional: Add padding to cells */
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+.table_center_div{
+  display: flex;
+  width: inherit;
+  padding: 0 2rem;
+  justify-content: space-between;
+}
+
+.table_center_div p{ 
+  margin: 0;
 }
 
 .short_table th {
@@ -237,6 +248,7 @@
 .short_table tbody tr:nth-child(even) {
   background-color: #f2f2f2; /* Optional: Set alternate background color for even rows */
 }
+
 
 .center-align {
   text-align: center;
@@ -349,3 +361,37 @@ height: 100%;
 }
 
 
+/* /shortlisted_facilty */
+.table_bottom_row{
+  display: flex;
+  margin-top: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+
+/* fess boottom div */
+
+.fess_bottom_div {
+  background-color: white;
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* collegeNotInterested  */
+
+.collegeNotInterested{
+  margin-top: 1.5rem !important;
+  width: 90%;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.collegeNotInterested > p {
+  margin: 0;
+  font-size: 16px;
+  padding: 10px;
+  font-weight: bold;
+}
