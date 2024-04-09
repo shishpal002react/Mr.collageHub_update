@@ -16,6 +16,8 @@ import FacilitiyRecommantaion from "./pages/FacilitiyRecommantaion";
 import PlacementRecommantation from "./pages/PlacementRecommantation";
 import CollageFessRecommantation from "./pages/CollageFessRecommantation";
 import Loan from "./pages/Loan";
+import Profile from "./pages/Profile";
+import ConversationActivity from "./pages/ConversationActivity";
 
 function App() {
   return (
@@ -43,6 +45,8 @@ function App() {
         <Route path="/shortlisted_CollageFessRecommantation" element={<CollageFessRecommantation/>} />
 
         <Route path="/loan" element={<Loan/>} />
+        <Route path="/profile" element={<Profile/>} />
+        <Route path="/conversationActivity" element={<ConversationActivity/>} />
         </Routes>
       </BrowserRouter>
     </>

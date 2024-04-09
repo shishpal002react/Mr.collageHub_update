@@ -570,6 +570,9 @@ background-color: #CDCDCD;
   border-radius: 4px;
   padding: 1rem 1.5rem;
 }
+.loan_div > div {
+  margin-top: 1rem;
+}
 
 .loan_div div p{
   margin: 0;
@@ -582,19 +585,262 @@ background-color: #CDCDCD;
   text-align: center;
 }
 
-.internal_div {
+.loan_internal_div {
   width: 300px;
   border: 1px solid black;
+  padding: 8px 35px 8px 35px;
+  border-radius: 4px;
+}
+
+.loan_internal_div > input[type="file"] {
+  display: block; 
+  width: 100%; 
+  height: 100%; 
+  cursor: pointer;
+  color: white;
+  background-color: #1D3969;
 }
 
 .Loan_button{
-  display: flex;
   padding: 12px 54px 12px 54px;
   background-color:  #1D3969;
   border-radius: 4px;
+  width: fit-content; 
+  margin: auto;
 }
 
 .Loan_button {
   margin: 0;
   color: white;
+}
+
+.loan_main_div{
+  width: 80%;
+  margin: auto;
+  margin-top: 2rem;
+  border: 1px solid black;
+  border-radius: 4px;
+  max-height: 749px;
+  padding: 1rem 2rem;
+}
+
+.loan_main_div > p
+{
+  color: #3FB1B5;
+  font-size: 2rem;
+}
+
+.loan_main_div >  p::after {
+  content: ""; 
+  display: block;
+  border-bottom: 1px solid black; 
+  margin-top: 0.5rem; 
+}
+
+
+.loan_main_child{
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+.Loan_main_parent_left{
+  width: 60%;
+}
+
+.Loan_main_left{
+  width: 100%;
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Loan_main_left > select{
+  width: 60%;
+  height: 40px;
+}
+
+.loan_radio{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 70%;
+}
+
+.loan_radio input[type="radio"] {
+ margin-right: 1rem;
+}
+
+.loan_Button{
+  padding: 12px 54px;
+  border-radius: 4px;
+  background-color: #1D3969;
+  text-align: center;
+  display: inline-block;
+  justify-content: center;
+  margin: auto; 
+  width: max-content; 
+}
+
+.loan_Button >p{
+  margin: 0;
+  color: white;
+}
+
+.Loan_main_right{
+  padding: 1rem;
+  background-color: #3FB1B5;
+  width: 40%;
+  height: 400px;
+}
+
+.Loan_main_right > div{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.Loan_main_right > div > p{
+    margin: 0;
+    color: white;
+}
+
+/* profile */
+.profile_div {
+  width: 90%;
+  margin-top: 2rem !important;
+  margin: auto;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+.profile_child_div{
+  width: 461px;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid #353535;
+  padding: 1rem;
+}
+
+.profile_child_div >p{
+  margin: 0;
+  font-size: 20px;
+  color: #00A7B1;
+}
+
+.profile_child_div > p::after {
+  content: ""; 
+  display: block;
+  border-bottom: 1px solid #000000; 
+  margin-top: 0.5rem; 
+}
+
+.pofile_interal{
+  width: 100%;
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.pofile_interal > p {
+  margin: 0;
+}
+
+.pofile_interal > input {
+    width: 70%;
+}
+
+.profile_button{
+  padding: 12px 49px 12px 49px;
+  border-radius: 4px;
+  background-color: #FF3232;
+  margin: auto;
+  margin-top: 2rem;
+  width: fit-content; 
+}
+
+.profile_radio{
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+  justify-content: start;
+  width: 70%;
+  flex-wrap: wrap;
+  line-height: 30px;
+}
+
+.profile_radio input[type="radio"]{
+  margin-right: 10px;
+}
+
+.pofile_interal select{
+  width: 70%;
+}
+
+/* Conservation Activity */
+.my-chart {
+  width: 80%; 
+  margin: auto; 
+  margin-top: 3rem;
+  height: auto;
+}
+
+.my-chart > Line {
+  width: 200%;
+  height: auto;
+}
+
+.conver-container{
+  width: 90%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.conver-container > p {
+  margin: 0;
+  font-size: 20px;
+} 
+
+.conver_top_child{
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.conver_top_parent{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 3rem;
+  width: 50%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.conver_top_child >p {
+  margin: 0;
+}
+
+.coverage_main_header{
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin: auto;
+  margin-top: 2rem;
+  width: 60%;
+}
+
+.coverage_main_header div {
+  padding: 5px 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.coverage_main_header input[type="checkbox"] {
+  margin-right: 10px;
 }
