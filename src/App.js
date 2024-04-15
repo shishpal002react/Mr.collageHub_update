@@ -18,6 +18,8 @@ import CollageFessRecommantation from "./pages/CollageFessRecommantation";
 import Loan from "./pages/Loan";
 import Profile from "./pages/Profile";
 import ConversationActivity from "./pages/ConversationActivity";
+import ConverationL3Activity from "./pages/ConverationL3Activity";
+import ConverationLeadServe from "./pages/ConverationLeadServe";
 
 function App() {
   return (
@@ -47,6 +49,9 @@ function App() {
         <Route path="/loan" element={<Loan/>} />
         <Route path="/profile" element={<Profile/>} />
         <Route path="/conversationActivity" element={<ConversationActivity/>} />
+        <Route path="/ConverationL3Activity" element={<ConverationL3Activity/>} />
+        <Route path="/ConverationLeadServe" element={<ConverationLeadServe/>} />
+
         </Routes>
       </BrowserRouter>
     </>

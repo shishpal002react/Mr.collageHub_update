@@ -9,9 +9,14 @@ import "../App.css";
 import Navbar2 from "../Component/Navbar/Navbar2";
 import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import MySearchModel from '../Component/Search/Search1';
+import MyPageNotFoundModel from "../Component/PageNotFound/PageNotFoundModel";
 
 const CollageRecommantaion = () => {
-    const navigate = useNavigate();
+  const [serachModel,setSearchModel]=useState(false);
+  const [pageNotFoundModel,setPageNotFoundModel]=useState(false);
+
+  const navigate = useNavigate();
   const location = useLocation();
   const { pathname } = location;
 
@@ -350,11 +355,11 @@ const CollageRecommantaion = () => {
       <div className="recommatntaion_right_button">
 
         <div className="recommantation_short">
-                <p>Show Cohort</p>
+                <p onClick={() => setPageNotFoundModel(true)}>Show Cohort</p>
         </div>
 
         <div className="recommantation_short">
-                <p>Search</p>
+                <p onClick={() => setSearchModel(true)}>Search</p>
        </div>
 
       </div>
@@ -505,6 +510,16 @@ const CollageRecommantaion = () => {
 
         </div>
         </div>
+
+        <MySearchModel
+            show={serachModel}
+            onHide={() => setSearchModel(false)}
+           />
+
+        <MyPageNotFoundModel
+         show={pageNotFoundModel}
+         onHide={() => setPageNotFoundModel(false)}
+        />
 
     </>
   );

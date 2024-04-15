@@ -5,6 +5,7 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
+  line-height: 16px;
   }
 
 .App {
@@ -158,12 +159,12 @@
   column-gap: 1rem;
 }
 
-.shortList_Box_second_child_child div{
+.shortList_Box_second_child_child > div{
   background-color: #3FB1B5;
   height: auto;
   width: auto;
   padding: 12px 14px 12px 14px;
-  border-radius: 4px;
+  cursor: pointer;
 }
 
 .shortList_Box_second_child_child div p{
@@ -172,6 +173,7 @@
   color: #000000;
   margin: 0;
   color: white;
+
 }
 
 .single_flex_short{
@@ -500,6 +502,7 @@ height: 100%;
 .recommantation_short p{
   margin: 0;
   color: black;
+  cursor: pointer;
 }
 
 .recommantation_right_div{
@@ -843,4 +846,69 @@ background-color: #CDCDCD;
 
 .coverage_main_header input[type="checkbox"] {
   margin-right: 10px;
+}
+
+.conversation-container{
+  margin-top: 1rem !important;
+  width: 80%;
+  margin: auto;
+  padding: 0.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.conversation-container > div{
+  width: 20%;
+  column-gap: auto;
+}
+
+
+.time-heading{
+  margin-top: 0.5rem !important;
+  width: 65%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.heading-line{
+  width: 35%;
+  border: 1px solid red;
+}
+
+.time-heading >p {
+  margin: 0;
+}
+
+/* converation-table */
+
+.converation-table{
+  width: 80%;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.converation-table table {
+  width: 100%;
+  border-collapse: collapse; 
+}
+
+.converation-table table thead {
+background-color: #CDCDCD;
+}
+
+.converation-table th:nth-child(1){
+  width: 60%;
+}
+
+.converation-table th,
+.converation-table td {
+  padding: 8px 2rem;
+}
+
+.converation-table td {
+  border-bottom: 1px solid black;
 }

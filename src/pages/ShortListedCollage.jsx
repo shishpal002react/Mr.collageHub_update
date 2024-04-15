@@ -9,8 +9,13 @@ import "../App.css"
 import Navbar2 from '../Component/Navbar/Navbar2';
 import { useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import SortListedModel from '../Component/SortListedModel/SortListedModel';
+import CifModel from '../Component/Models/CifModel';
+
 
 const ShortListedCollage = () => {
+    const [showModel,setShowModel]=useState(false);
+    const [cifModel,setCifModel]=useState(false);
     const navigate = useNavigate();
     const location = useLocation();
     const { pathname } = location;
@@ -51,7 +56,7 @@ const ShortListedCollage = () => {
                 </div>
 
                 </div>
-                <button className='button_header_style' style={{textAlign:"right"}}>
+                <button className='button_header_style' style={{textAlign:"right"}} onClick={()=>setShowModel(true)}>
                 Send more info
                 </button>
             </div>
@@ -77,7 +82,7 @@ const ShortListedCollage = () => {
                     <p >Source Landing</p>
 
                     <div className='shortList_Box_second_child_child'>
-                        <div><p>CAF Course Link</p></div>
+                        <div onClick={()=>setCifModel(true)}><p>CAF Course Link</p></div>
                         <div><p>CAF Cart Link</p></div>
                         <div><p>Update Status</p></div>
                         <div><p>Admission Document</p></div>
@@ -336,7 +341,7 @@ const ShortListedCollage = () => {
                     <p >Source Landing</p>
 
                     <div className='shortList_Box_second_child_child'>
-                        <div><p>CAF Course Link</p></div>
+                        <div onClick={()=>setCifModel(true)}><p>CAF Course Link</p></div>
                         <div><p>CAF Cart Link</p></div>
                         <div><p>Update Status</p></div>
                         <div><p>Admission Document</p></div>
@@ -378,11 +383,21 @@ const ShortListedCollage = () => {
                 </div>
 
             </div>
-
-
-
 
            </div>
+
+
+        <SortListedModel
+        show={showModel}
+        onHide={() => setShowModel(false)}
+        />
+
+<       CifModel
+        show={cifModel}
+        onHide={() =>setCifModel(false)}
+        />
+
+       
         </>
     )
 }

@@ -82,19 +82,19 @@ const Navbar2 = () => {
 
             <ul class="header-list">
                 <li>
-                <p className={lastPart === "shortlisted_ups" ? "nav_bar_color" : ""}>Conversation&Activity</p>
+                <p className={lastPart === "ConverationLeadServe" ? "nav_bar_color" : ""} onClick={()=>navigate("/ConverationLeadServe")}>Conversation&Activity</p>
                 </li>
                 <li>
                 <p className={lastPart === "loan" ? "nav_bar_color" : ""} onClick={()=>navigate("/loan")}>Loan</p>
                 </li>
                 <li>
-                <p className={lastPart === "shortlisted_ups" ? "nav_bar_color" : ""}>Profile</p>
+                <p className={lastPart === "profile" ? "nav_bar_color" : ""} onClick={()=>navigate("/profile")}>Profile</p>
                 </li>
                 <li>
-               <p className={lastPart === "shortlisted_ups" ? "nav_bar_color" : ""}>College_Recommended</p>
+               <p className={lastPart === "shortlisted_CollageRecommantaion" ? "nav_bar_color" : ""} onClick={()=>navigate("/shortlisted_CollageRecommantaion")}>College_Recommended</p>
                 </li>
                 <li>
-                <p className={lastPart === "shortlisted_ups" ? "nav_bar_color" : ""}>Shortlisted_colleges (12)</p>
+                <p className={lastPart === "shortlisted_pages" ? "nav_bar_color" : ""} onClick={()=>navigate("/shortlisted_pages")}>Shortlisted_colleges (12)</p>
                 </li>
                 <li>
                <p className={lastPart === "shortlisted_CollageNotInterested" ? "nav_bar_color" : ""} onClick={()=>navigate("/shortlisted_CollageNotInterested")}>Colleges_Not_Interested (0)</p>

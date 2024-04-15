@@ -24,12 +24,12 @@ Chart.register(
   Title
 );
 
-const ConversationActivity = () => {
+const ConverationL3Activity = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const { pathname } = location;
-  const [activity,setActivity]=useState(null)
-  const [remark,setRemark]=useState(null)
+  const [activity,setActivity]=useState("")
+  const [remark,setRemark]=useState("")
 
 
 
@@ -169,23 +169,23 @@ const ConversationActivity = () => {
       </div>
 
       <div className="coverage_main_header">
-        <div className={activity ? "changeColor" : ""}>
+        <div className={lastPart === "conversationActivity" ? "changeColor" : ""}>
           <input
             type="checkbox"
-            onChange={() => setActivity(!activity)}
+            onChange={() => navigate("/conversationActivity")}
           />
           <label>Activity</label>
         </div>
         <div
-          className={remark ? "changeColor" : ""}
+          className={lastPart === "conversationActivity" ? "changeColor" : ""}
         >
           <input
             type="checkbox"
-            onChange={() => setRemark(!remark)}
+            onChange={() => navigate("/conversationActivity")}
           />
           <label>Remarks</label>
         </div>
-         <div
+        <div
           className={lastPart === "ConverationL3Activity" ? "changeColor" : ""}
         >
           <input
@@ -196,12 +196,12 @@ const ConversationActivity = () => {
         </div>
         <div
           className={
-            lastPart === "shortlisted_course_fess" ? "changeColor" : ""
+            lastPart === "ConverationLeadServe" ? "changeColor" : ""
           }
         >
           <input
             type="checkbox"
-            onChange={() => navigate("/shortlisted_course_fess")}
+            onChange={() => navigate("/ConverationLeadServe")}
           />
           <label>Lead Score</label>
         </div>
@@ -210,38 +210,12 @@ const ConversationActivity = () => {
             lastPart === "shortlisted_course_fess" ? "changeColor" : ""
           }
         >
-       
+         
           <label>All</label>
         </div>
       </div>
 
 
-{
-activity && 
-<div>
-<TimeHeading/>
-<div className="conversation-container">
-      <div>6:21 PM</div>
-      <div>
-        <p>Lead fill</p>
-        <p>798736646743- <a href="#">Laxmipati Group of Institution</a></p>
-      </div>
-</div>         
-<TimeHeading/>
-<div className="conversation-container">
-<div>6:21 PM</div>
-<div>
-  <p>Lead fill</p>
-  <p>798736646743- <a href="#">Laxmipati Group of Institution</a></p>
-</div>
-</div>
-</div>
-}
-
-
-
-{
- remark && <div>
  <TimeHeading/>
  <div className="conversation-container">
        <div>6:21 PM</div>
@@ -282,11 +256,46 @@ activity &&
        <div>
        stdis in mid of the conversation // tried again - stdis
        </div>
- </div>  
- 
- 
  </div>
-}
+
+ <TimeHeading/>
+ <div className="conversation-container">
+      <div>6:21 PM</div>
+      <div>
+        <p>Lead fill</p>
+        <p>798736646743- <a href="#">Laxmipati Group of Institution</a></p>
+      </div>
+</div>
+
+<TimeHeading/>
+
+<div className="conversation-container">
+       <div>12:21 PM</div>
+       <div>
+         <p>(lorenepsom@gmail.com)</p>
+         <p>Connectivity Status : Not connected</p>
+         <p>Intent status : Low</p>
+         <p>Callback scheduled for</p>
+         <a href="#">Jun 1, 2023 11:00:00 PM</a>
+       </div>
+       <div>
+       stdis in mid of the conversation // tried again - stdis
+       </div>
+ </div>
+
+ <div className="conversation-container">
+       <div>12:21 PM</div>
+       <div>
+         <p>(lorenepsom@gmail.com)</p>
+         <p>Connectivity Status : Not connected</p>
+         <p>Intent status : Low</p>
+         <p>Callback scheduled for</p>
+         <a href="#">Jun 1, 2023 11:00:00 PM</a>
+       </div>
+       <div>
+       stdis in mid of the conversation // tried again - stdis
+       </div>
+ </div>
 
 
 
@@ -294,4 +303,4 @@ activity &&
   );
 };
 
-export default ConversationActivity;
+export default ConverationL3Activity;
