@@ -11,11 +11,15 @@ import { useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import SortListedModel from '../Component/SortListedModel/SortListedModel';
 import CifModel from '../Component/Models/CifModel';
-
+import GetLinkModel from '../Component/Models/GetLinkModel';
+import UpdateStatusModel from '../Component/Models/UpdateStatusModel';
 
 const ShortListedCollage = () => {
     const [showModel,setShowModel]=useState(false);
     const [cifModel,setCifModel]=useState(false);
+    const [getLinkModel,setGetLinkModel]=useState(false);
+    const [updateStatus,setUpdateStatus]=useState(false);
+
     const navigate = useNavigate();
     const location = useLocation();
     const { pathname } = location;
@@ -83,8 +87,8 @@ const ShortListedCollage = () => {
 
                     <div className='shortList_Box_second_child_child'>
                         <div onClick={()=>setCifModel(true)}><p>CAF Course Link</p></div>
-                        <div><p>CAF Cart Link</p></div>
-                        <div><p>Update Status</p></div>
+                        <div onClick={()=>setGetLinkModel(true)}><p>CAF Cart Link</p></div>
+                        <div onClick={()=>setUpdateStatus(true)}><p>Update Status</p></div>
                         <div><p>Admission Document</p></div>
                     </div>
                 </div>
@@ -395,6 +399,18 @@ const ShortListedCollage = () => {
 <       CifModel
         show={cifModel}
         onHide={() =>setCifModel(false)}
+        />
+
+        <GetLinkModel
+        show={getLinkModel}
+        onHide={()=>setGetLinkModel(false)}
+        
+        />
+
+        <UpdateStatusModel
+        show={updateStatus}
+        onHide={()=>setUpdateStatus(false)}
+
         />
 
        

@@ -1,12 +1,8 @@
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import "./Model.css"
-import Cif1Model from './Cif1Model'
-import { useState } from 'react';
 
-function CifModel(props) {
-  const [show ,setShow]=useState(false);
-
+function Cif1Model(props) {
     return (
       <Modal
         {...props}
@@ -28,21 +24,22 @@ function CifModel(props) {
                 <label htmlFor="SAM Global University, Bhopal">SAM Global University, Bhopal</label>
             </div>
 
-            <div className='backColor'>
-               Select At least 1 institute group
+            <div className='cif-search'>
+               <input type="text" />
+               <button>Send Link</button>
             </div>
 
           </div>
         </Modal.Body>
         <Modal.Footer>
             <div className='cif-footer'>
-            <Button onClick={()=>setShow(true)}>Get Link</Button>
+            <Button onClick={props.onHide}>Get Link</Button>
             <Button className='cif-footer-button' onClick={props.onHide}>Cancel</Button>
             </div>
+        
         </Modal.Footer>
-        <Cif1Model show={show} onHide={()=>setShow(false)}/>
       </Modal>
     );
   }
 
-  export default CifModel;
+  export default Cif1Model;
