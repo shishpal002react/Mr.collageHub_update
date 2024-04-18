@@ -106,7 +106,14 @@ const Profile = () => {
             </div>
             <div className="pofile_interal">
                     <p>Father Occupation</p>
-                    <input type="text" />
+                    <select name="" id="">
+                        <option value="Private ">Private </option>
+                        <option value="Government ">Government </option>
+                        <option value="Self-Employed ">Self-Employed </option>
+                        <option value="Self-Employed ">Self-Employed </option>
+                  
+
+                    </select>
             </div>
 
             <p>Parent Details</p>
@@ -138,7 +145,11 @@ const Profile = () => {
             </div>
             <div className="pofile_interal">
                     <p>Board</p>
-                    <input type="text" />
+                    <select name="" id="">
+                        <option value="Private ">ICSE/CBSE/IB </option>
+                        <option value="Government ">State Board </option>
+                        <option value="Self-Employed ">Others </option>
+                    </select>
             </div>
             <div className="pofile_interal">
                     <p>School</p>
@@ -194,7 +205,17 @@ const Profile = () => {
             </div>
             <div className="pofile_interal">
                     <p>Level</p>
-                    <input type="text" />
+                    <select name="" id="">
+                        <option value="UG">UG</option>
+                        <option value="PG">PG</option>
+                        <option value="Diploma">Diploma</option>
+                        <option value="Ph.D">Ph.D</option> 
+                        <option value="Certificate">Certificate</option>
+                        <option value="10th">10th</option>
+                        <option value="12th">12th</option>
+                        <option value="11th">11th</option>
+                        
+                    </select>
             </div>
             <div className="pofile_interal">
                     <p>Degree</p>
@@ -222,10 +243,14 @@ const Profile = () => {
             </div>
             <div className="pofile_interal">
                     <p>Budget</p>
-                    <select>
-                        <option>Enginnering</option>
-                        <option>Docter</option>
-                        <option>Teacher</option>
+                    <select name="" id="">
+                        <option value="UG">0-2 Lacs per annum</option>
+                        <option value="PG">2-3 Lacs per annum</option>
+                        <option value="Diploma">2-5 Lacs per annum</option>
+                        <option value="Ph.D">5 Lacs per annum</option> 
+                        <option value="Certificate">&lt; INR 50K per annum</option>
+                        <option value="10th"> &lt; INR 50K per annum</option>
+                        <option value="12th">&lt; INR 50K per annum</option>
                     </select>
             </div>
 
