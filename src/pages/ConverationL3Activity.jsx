@@ -28,10 +28,6 @@ const ConverationL3Activity = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const { pathname } = location;
-  const [activity,setActivity]=useState("")
-  const [remark,setRemark]=useState("")
-
-
 
   const parts = pathname.split("/");
   const lastPart = parts[parts.length - 1];

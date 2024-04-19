@@ -28,10 +28,6 @@ const ConverationLeadServe = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const { pathname } = location;
-  const [activity,setActivity]=useState("")
-  const [remark,setRemark]=useState("")
-
-
 
   const parts = pathname.split("/");
   const lastPart = parts[parts.length - 1];
@@ -218,7 +214,7 @@ const ConverationLeadServe = () => {
       <div className="converation-table">
               <table>
                 <thead>
-                  <tr>
+                  <tr> 
                     <th>Attribute Label</th>
                     <th>Value</th>
                     <th>Info Provided</th>

@@ -288,6 +288,7 @@ const CollageFessRecommantation = () => {
         </div>
 
         <div className="ups_right_child">
+          
           <div className="recommantation_margin">
             <div className="recommantation_margin_child">
               <p>Show Only</p>
