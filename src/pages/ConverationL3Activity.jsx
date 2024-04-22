@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Navbar2 from "../Component/Navbar/Navbar2";
 import { Line } from "react-chartjs-2";
 import { Chart } from "chart.js";
-import "chartjs-adapter-date-fns";
 import {
   CategoryScale,
   LinearScale,

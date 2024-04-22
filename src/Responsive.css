@@ -159,6 +159,90 @@
           line-height: 2rem;
         }
     
+        /* lucky pages responsive */
+        .home2{
+          flex-direction: column;
+          height: auto;
+          width: inherit;
+          margin: auto;
+          margin-bottom: 10px;
+        }
+
+        .home1{
+          flex-direction: column;
+          margin-top: 10px;
+        }
+
+    
+        .home5{
+          flex-direction: column;
+        }
+
+      
+
+
+      .home7 {
+        flex-direction: column;
+      }
+
+      .home8{
+        width: 95%;
+        margin: auto;
+      }
+
+     .home14{
+      width: 95%;
+      margin: auto;
+     }
+
+     .home18{
+      flex-direction: column;
+      margin: 5px;
+     }
+
+     .home20{
+      width: 90%;
+      flex-direction: column;
+     }
+    
+.home20 .left-line{
+  display: none;
+}
+
+.assignment{
+  display: block !important;
+}
+
+.assignment3{
+  margin-top: 10px;
+}
+
+.assignment4{
+  overflow-x: scroll;
+}
+
+.search03{
+  display: block !important;
+}
+
+.modal-content{
+  width: 90%;
+  margin: auto;
+}
+
+.addstudent2{
+  flex-direction: column;
+}
+
+.addstudent2 > input {
+  width: auto !important;
+}
+
+.addstudent2 > select {
+  width: auto !important;
+}
+
+
   }
 
   
@@ -304,11 +388,12 @@
         column-gap: 5px;
     }
 
+
+
+
  
 
   }
-
-
 
 
   @media screen and (max-width:410px) {

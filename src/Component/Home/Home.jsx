@@ -13,7 +13,7 @@ const Home = () => {
     const [show, setShow] = useState(false);
 
     function Save(props) {
-        console.log("Hello");
+     
         return (
             <Modal
                 {...props}
@@ -46,7 +46,7 @@ const Home = () => {
     const [show1, setShow1] = useState(false);
 
     function Discovery(props) {
-        console.log("Hello");
+      
         return (
             <Modal
                 {...props}
@@ -166,45 +166,35 @@ const Home = () => {
                             </div>
                             <p>21795343</p>
                         </div>
-                        <div>
-                            <hr className="vertical-line" />
-                        </div>
+                       
                         <div className='home21'>
                             <div className='home22'>
                                 <span>Search Name</span>
                             </div>
                             <p>Manish chhipa</p>
                         </div>
-                        <div>
-                            <hr className="vertical-line" />
-                        </div>
+                     
                         <div className='home21'>
                             <div className='home22'>
                                 <span>Search Phone Number</span>
                             </div>
                             <p>8978675645</p>
                         </div>
-                        <div>
-                            <hr className="vertical-line" />
-                        </div>
+                      
                         <div className='home21'>
                             <div className='home22'>
                                 <span>Search Status</span>
                             </div>
                             <p>Verified</p>
                         </div>
-                        <div>
-                            <hr className="vertical-line" />
-                        </div>
+                      
                         <div className='home21'>
                             <div className='home22'>
                                 <span>Search Lead Score</span>
                             </div>
                             <p>None</p>
                         </div>
-                        <div>
-                            <hr className="vertical-line" />
-                        </div>
+                       
                         <div className='home21'>
                             <div className='home22'>
                                 <span>Search Call Back Time</span>
@@ -214,7 +204,7 @@ const Home = () => {
                     </div>
 
 
-                    <div className='home26'>
+                    {/* <div className='home26'>
                         <div className='home23'>
                             <div className='home24'>
                                 <p>Previous</p>
@@ -224,7 +214,7 @@ const Home = () => {
                                 <p>Next</p>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
                 </div>
             </div>
