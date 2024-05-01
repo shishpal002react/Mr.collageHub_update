@@ -179,7 +179,7 @@ const NewAssignment = () => {
 
     return (
         <>
-            {/* <Navbar /> */}
+            <Navbar />
             <div className='assignment'>
                 <div className='assignment1'>
                     <div className='assignment2'>

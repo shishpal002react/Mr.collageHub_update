@@ -96,7 +96,6 @@
 }
 
 .home6 {
-  width: auto;
   height: 40px;
   border: 1px solid #000000;
 }
@@ -364,12 +363,12 @@
 
 .home22 {
   width: auto;
-  height: 28px;
   border: 1px solid #000000;
   border-radius: 4px;
   background: #F4F4F4;
   display: flex;
   align-items: center;
+  padding: 5px 10px;
   justify-content: space-between;
 }
 

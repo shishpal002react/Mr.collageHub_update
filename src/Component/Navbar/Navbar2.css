@@ -133,30 +133,47 @@
   
  /* Responsive styles for screens less than or equal to 768px (tablet) */
 @media screen and (max-width: 768px) {
-  .navbarUpdate-child {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+  .navbarUpdate-child{
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+    display: block;
+    justify-content: unset;
+    text-align: center;
   }
 
-  .header_list_left {
-    margin-top: 20px;
-    gap: 20px;
+  .header_list_left{
+    display: block;
+    align-items: center;
+    gap: 40px;
   }
+
+  .header_left_side_content{
+    display: block;
+    align-items: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .navbarUpdate-bottom{
+    width: 90%;
+    margin: auto;
+    padding-top: 5px;
+    display: block;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .select-style-second  option {
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    display: black;
+  }
+
 }
 
 /* Responsive styles for screens less than or equal to 480px (mobile) */
 @media screen and (max-width: 480px) {
-  .navbarUpdate-child {
-    padding: 10px;
-  }
 
-  .header_list_left {
-    gap: 10px;
-  }
-
-  .select-style,
-  .select-style-second {
-    width: 100%;
-  }
 }

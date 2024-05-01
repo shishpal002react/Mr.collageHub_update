@@ -81,8 +81,6 @@ const Navbar2 = () => {
                 else if(e.target.value=== "old-caf-link"){
                   setShowLinkModel(true)
                 }
-
-
               }}
             >
               <option value="">Select</option>
