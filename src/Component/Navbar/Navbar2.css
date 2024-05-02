@@ -150,10 +150,11 @@
 
   .header_left_side_content{
     display: block;
-    align-items: center;
-    align-items: center;
+    align-items: start;
+    justify-content: start;
     gap: 10px;
   }
+
 
   .navbarUpdate-bottom{
     width: 90%;
@@ -171,9 +172,14 @@
     display: black;
   }
 
+  .select-style-second {
+    margin-top: 1rem;
+}
+.logo-update{
+    width: 200px; 
+    height: 200px;
+    background-color: #00A7B1;
 }
 
-/* Responsive styles for screens less than or equal to 480px (mobile) */
-@media screen and (max-width: 480px) {
-
 }
+

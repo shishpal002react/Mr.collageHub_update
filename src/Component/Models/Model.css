@@ -130,3 +130,13 @@
     font-weight: bold;
     padding: 5px 10px;
  }
+
+ @media screen and (max-width:480px) {
+    .message-container > div{
+       display: block;
+    }
+
+    .message-container > div > div{
+        margin-top: 10px;
+     }
+ }
